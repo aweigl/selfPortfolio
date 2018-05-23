@@ -6,6 +6,14 @@ function scrollToAnchor(aid) {
 }
 
 
-$('#link').click(function () {
-    scrollToAnchor('super');
+$('#projects').click(function () {
+    scrollToAnchor('link1');
+})
+
+$('#aboutMe').click(() => {
+    scrollToAnchor('link2')
+})
+
+$('#contact').click(() => {
+    scrollToAnchor('link3')
 })
