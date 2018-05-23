@@ -20,3 +20,5 @@ $('#contact').click(() => {
 $('#skills').click(() => {
     scrollToAnchor('skills')
 })
+
+changing dsomething
