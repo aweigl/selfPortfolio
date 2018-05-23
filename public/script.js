@@ -5,20 +5,27 @@ const scrollToAnchor = (aid) => {
     }, "slow")
 }
 
-$('#projects').click(() => {
-    scrollToAnchor('link1');
-})
-
 $('#aboutMe').click(() => {
-    scrollToAnchor('link2')
+    $('#menu1').addClass('underlined');
+    scrollToAnchor('link2');
+    console.log($('.aboutMe').position());
+
 })
 
-$('#contact').click(() => {
-    scrollToAnchor('link3')
+$('#projects').click(() => {
+    $('#menu2').addClass('underlined');
+    scrollToAnchor('link1');
+    console.log($('.projects').position());
 })
 
 $('#skills').click(() => {
+    $('#menu3').addClass('underlined');
     scrollToAnchor('skills')
+    console.log($('.skills').position());
 })
 
-changing dsomething
+$('#contact').click(() => {
+    $('#menu4').addClass('underlined');
+    scrollToAnchor('link3')
+    console.log($('.contact').position());
+})
