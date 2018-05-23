@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("/background.jpg");
+  background-image: url("/background2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -8,6 +8,7 @@ body {
 
 .app {
   position: relative;
+  overflow: hidden;
 }
 
 header {
@@ -19,8 +20,8 @@ header {
   grid-template-columns: 30% 70%;
   align-items: center;
   font-size: 20px;
-  border: solid 1px;
-  background: white;
+  border-bottom: solid 1px gainsboro;
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .name {
@@ -52,55 +53,67 @@ header {
   margin-top: 100px;
 }
 
-.know {
+.skills {
+  margin-top: 50px;
+  padding: 20px 30px;
+  /* background: rgba(255, 255, 255, 0.85); */
+  /* border-bottom: 1px solid gainsboro; */
+}
+
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 50px;
-  padding: 20px 30px;
-  border-bottom: 1px solid gainsboro;
+  flex-wrap: wrap;
 }
 
-.know img {
+.icons img {
   height: 80px;
   margin: 0 10px;
 }
 
 .knowTitle {
+  margin: 0;
   text-align: center;
+  color: white;
+  /* text-shadow: 1px 1px 1px black; */
 }
 
-.know h4 {
+.icons h4 {
   text-align: center;
+  /* margin: 10px 0; */
+  color: white;
+  text-shadow: -16px 14px 3px black;
 }
 
 .projects {
   height: 500px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.85);
   margin-top: 50px;
+  border-bottom: 1px solid gainsboro;
 }
 
 .aboutMe {
-  height: 300px;
-  width: 100%;
-  background-color: white;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.85);
   position: relative;
   margin-top: 50px;
+  border-bottom: 1px solid gainsboro;
 }
 
 .contact {
-  height: 500px;
-  width: 100%;
-  background-color: white;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.85);
   position: relative;
   margin: 50px 0;
+  border-bottom: 1px solid gainsboro;
 }
 
 footer {
   bottom: 0;
   padding: 1vw 1vw;
-  width: 100%;
+  width: 100vw;
   height: 20px;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
 }
