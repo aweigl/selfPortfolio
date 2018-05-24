@@ -150,10 +150,16 @@ header {
   margin-top: 150px;
 }
 
+.contactIcons i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
   bottom: 0;
   padding: 1vw 1vw;
-  width: 100vw;
   height: 20px;
   margin-top: 150px;
   background: rgba(255, 255, 255, 0.95);
