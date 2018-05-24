@@ -136,10 +136,29 @@ header {
 }
 
 .projects {
-  height: 500px;
   background: rgba(255, 255, 255, 0.85);
   /* background: rgba(0, 0, 0, 0.85); */
   margin-top: 150px;
+  display: grid;
+}
+
+.projects video {
+  margin: 20px 20px;
+}
+.projects video:hover {
+  -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+  -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+  box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+}
+
+.projectImg {
+  width: 400px;
+  margin: 20px 20px;
+}
+.projectImg:hover {
+  -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+  -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+  box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
 }
 
 .contact {

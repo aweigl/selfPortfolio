@@ -12,7 +12,7 @@ $('#aboutMe').click(() => {
 })
 
 $('#projects').click(() => {
-    scrollToAnchor('link1', 50);
+    scrollToAnchor('link1', -70);
     console.log($('.projects').position());
 })
 
@@ -22,7 +22,7 @@ $('#skills').click(() => {
 })
 
 $('#contact').click(() => {
-    scrollToAnchor('link3', 50)
+    scrollToAnchor('link3', 0)
     console.log($('.contact').position());
 })
 
