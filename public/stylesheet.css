@@ -30,7 +30,7 @@ header {
   font-size: 20px;
   /* border-bottom: solid 1px gainsboro; */
   /* background: rgba(255, 255, 255, 0.95); */
-  background: rgba(0, 0, 0, 0.67);
+  background: rgba(0, 0, 0, 0.75);
   color: white;
 }
 
@@ -44,7 +44,7 @@ header {
   grid-column: 2;
   justify-self: end;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 .menu a {
@@ -52,7 +52,15 @@ header {
 }
 
 .menu p {
-  text-transform: capitalize;
+  border-right: 1px solid;
+}
+
+#menu4 {
+  border-right: 0;
+}
+
+.menu p:hover {
+  text-decoration: underline;
 }
 
 .menuItem {
@@ -70,6 +78,7 @@ header {
   margin-top: 150px;
   padding: 20px 30px;
   /* background: rgba(255, 255, 255, 0.85); */
+  /* background: rgba(0, 0, 0, 0.67); */
   /* border-bottom: 1px solid gainsboro; */
 }
 
@@ -100,27 +109,45 @@ header {
   text-shadow: -16px 14px 3px black;
 }
 
+.aboutMe {
+  background: rgba(255, 255, 255, 0.85);
+  /* background: rgba(0, 0, 0, 0.67); */
+  position: relative;
+  margin-top: 150px;
+  margin: 0 20vw;
+  padding: 60px;
+  border-radius: 15px;
+  border: 1px solid rgba(56, 55, 55, 0.8);
+}
+
+.aboutMe * {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.aboutMeHeader {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.aboutMe p {
+  color: rgba(56, 55, 55);
+  line-height: 30px;
+}
+
 .projects {
   height: 500px;
   background: rgba(255, 255, 255, 0.85);
+  /* background: rgba(0, 0, 0, 0.85); */
   margin-top: 150px;
-  border-bottom: 1px solid gainsboro;
-}
-
-.aboutMe {
-  height: 100px;
-  background: rgba(255, 255, 255, 0.85);
-  position: relative;
-  margin-top: 150px;
-  border-bottom: 1px solid gainsboro;
 }
 
 .contact {
   height: 400px;
   background: rgba(255, 255, 255, 0.85);
+  /* background: rgba(0, 0, 0, 0.67); */
   position: relative;
   margin-top: 150px;
-  border-bottom: 1px solid gainsboro;
 }
 
 footer {
