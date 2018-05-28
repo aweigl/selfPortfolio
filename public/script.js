@@ -36,7 +36,6 @@ $('#textLink').click(() => {
 //clickEvents
 
 $(window).click((e) => {
-    console.log(e.target);
     if (!$(e.target).hasClass('seeThrough')) {
         $('.seeThrough').removeClass('seeThrough');
         $('.moveForward').removeClass('moveForward');
@@ -47,14 +46,40 @@ $(window).click((e) => {
     if ($(e.target).hasClass('projectImg') && !$(e.target).hasClass('moveAside')) {
         $('.moveAside').removeClass('moveAside');
         $(e.target).addClass('moveAside');
-        // setTimeout(() => {
-        //     $('.moveForward').removeClass('moveForward');
-        //     $(e.target).parent().find('.projectIcons').addClass('moveForward');
-        // }, 500);
     } else if ($(e.target).hasClass('projectImg') && $(e.target).hasClass('moveAside')) {
         $(e.target).removeClass('moveAside');
-        // $(e.target).parent().find('.projectIcons').removeClass('moveForward');
     } else {
         $('.moveAside').removeClass('moveAside');
     }
 });
+
+// $('.playIcon').click(() => {
+//     if ($('video').get(0).paused) {
+//         $('.playIcon').addClass('displayNone');
+//         $('video').get(0).play();
+//         setTimeout(() => {
+//             $('.pauseIcon').removeClass('displayBlock');
+//         }, 1000);
+//     } else {
+//         $('video').get(0).pause();
+//         $('.playIcon').removeClass('displayNone');
+//     }
+// });
+
+// $('.pauseIcon').click(() => {
+//     $('video').get(0).pause();
+// });
+
+// $('video').hover(() => {
+//     if (!$('video').get(0).paused) {
+//         $('.pauseIcon').addClass('displayBlock');
+//         setTimeout(() => {
+//             $('.pauseIcon').removeClass('displayBlock');
+//         }, 3000);
+//     } else {
+//         setTimeout(() => {
+//             $('.pauseIcon').addClass('displayBlock');
+//         }, 3000);
+//         $('.playIcon').removeClass('displayNone');
+//     }
+// });
