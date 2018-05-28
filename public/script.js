@@ -57,9 +57,8 @@ $('video').mouseenter((e) => {
     console.log("adding github icon");
     if (!$(e.target).hasClass('video_github')) {
         $('.video_github').addClass('displayBlock');
-    } else if ($(document).webkitIsFullScreen) {
+    } else {
         e.target.preventDefault();
-        return;
     }
 });
 

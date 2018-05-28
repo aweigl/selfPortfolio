@@ -103,7 +103,6 @@ header {
 
 .icons h4 {
   text-align: center;
-  /* margin: 10px 0; */
   color: white;
   text-shadow: -16px 14px 3px black;
 }
@@ -169,9 +168,8 @@ header {
   display: flex;
   justify-content: center;
   margin: 20px 20px;
-  top: 120px;
-  left: 100px;
-  /* z-index: -1; */
+  top: 30%;
+  left: 30%;
 }
 .projectIcons i {
   font-size: 80px;
@@ -191,7 +189,7 @@ header {
 }
 
 .projectImg {
-  width: 530px;
+  width: 625px;
   margin: 20px 20px;
   border-radius: 5px;
   border-top: 1px solid rgba(56, 55, 55, 0.8);
@@ -214,7 +212,7 @@ header {
 }
 
 .projects video {
-  width: 530px;
+  width: 625px;
   margin: 20px 20px;
   border-radius: 5px;
   border-top: 1px solid rgba(56, 55, 55, 0.8);
