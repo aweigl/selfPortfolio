@@ -164,27 +164,58 @@ header {
 }
 
 .projectContainer {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   /* justify-content: space-around; */
+}
+
+.projectIconContainerOne {
+  position: relative;
+}
+
+.projectIcons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  left: 120px;
+  top: 120px;
+  z-index: -1;
+}
+.projectIcons i {
+  font-size: 80px;
+  color: black;
+  margin-right: 100px;
+}
+
+.projectIcons i:hover {
+  color: white;
 }
 
 .projectImg {
   width: 530px;
   margin: 20px 20px;
   border-radius: 5px;
+  border-top: 1px solid rgba(56, 55, 55, 0.8);
 }
 
 .projectImg:hover {
   -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+  cursor: pointer;
 }
+
+.videoContainer {
+  display: grid;
+  justify-content: center;
+}
+
 .projects video {
   width: 530px;
   margin: 20px 20px;
-  justify-self: center;
   border-radius: 5px;
+  border-top: 1px solid rgba(56, 55, 55, 0.8);
 }
 
 .projects video:hover {
@@ -239,4 +270,17 @@ footer {
   margin-top: 150px;
   background: rgba(255, 255, 255, 0.95);
   border-top: 1px solid rgba(56, 55, 55, 0.8);
+}
+
+/* JQuery addClass */
+
+.seeThrough {
+  position: relative;
+  opacity: 0;
+  z-index: -2;
+  /* display: none; */
+}
+
+.moveForward {
+  z-index: 1;
 }
