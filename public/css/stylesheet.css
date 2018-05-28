@@ -137,6 +137,11 @@ header {
   line-height: 30px;
 }
 
+#textLink {
+  font-weight: bold;
+  color: black;
+}
+
 .projects * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -144,9 +149,10 @@ header {
 
 .projects {
   display: grid;
-  background: rgba(255, 255, 255, 0.85);
-  margin-left: 5vw;
-  margin-right: 5vw;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.85); */
+  margin-left: 20vw;
+  margin-right: 20vw;
   margin-top: 150px;
   border-radius: 15px;
 }
@@ -154,33 +160,34 @@ header {
 .projects h2 {
   text-align: center;
   text-decoration: underline;
+  color: white;
 }
 
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.projects video {
-  margin: 20px 20px;
-}
-
-.projects video:hover {
-  -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
-  -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
-  box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+  /* justify-content: space-around; */
 }
 
 .projectImg {
-  width: 400px;
+  width: 530px;
   margin: 20px 20px;
+  border-radius: 5px;
+}
+
+.projectImg:hover {
   -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
 }
+.projects video {
+  width: 530px;
+  margin: 20px 20px;
+  justify-self: center;
+  border-radius: 5px;
+}
 
-.projectImg:hover {
+.projects video:hover {
   -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
@@ -190,6 +197,7 @@ header {
   display: grid;
   justify-content: center;
   background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(56, 55, 55, 0.8);
   position: relative;
   margin-left: 30vw;
   margin-right: 30vw;
@@ -203,6 +211,7 @@ header {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: underline;
+  margin-top: 0;
 }
 
 .contactIcons {
@@ -229,4 +238,5 @@ footer {
   height: 20px;
   margin-top: 150px;
   background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid rgba(56, 55, 55, 0.8);
 }
