@@ -116,6 +116,12 @@ header {
   padding: 60px;
   border-radius: 15px;
   border: 1px solid rgba(56, 55, 55, 0.8);
+  display: flex;
+}
+
+.cvPhoto img {
+  border-radius: 10px;
+  margin-left: 25px;
 }
 
 .aboutMe * {
@@ -171,6 +177,7 @@ header {
   top: 30%;
   left: 30%;
 }
+
 .projectIcons i {
   font-size: 80px;
   color: black;

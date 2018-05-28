@@ -20,7 +20,7 @@ $('#projects').click(() => {
 });
 
 $('#skills').click(() => {
-    scrollToAnchor('skills', 50)
+    scrollToAnchor('skills', 0)
     console.log($('.skills').position());
 });
 
