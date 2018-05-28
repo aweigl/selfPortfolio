@@ -163,12 +163,6 @@ header {
   color: white;
 }
 
-.projectContainer {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-around; */
-}
-
 .projectIconContainerOne {
   position: relative;
 }
@@ -180,7 +174,7 @@ header {
   margin: 20px 20px;
   top: 120px;
   left: 100px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .projectIcons i {
   font-size: 80px;
@@ -206,6 +200,7 @@ header {
   border-top: 1px solid rgba(56, 55, 55, 0.8);
   transform: translateX(0);
   transition: 1s;
+  z-index: 1;
 }
 
 .projectImg:hover {
@@ -286,8 +281,6 @@ footer {
 .seeThrough {
   position: relative;
   opacity: 0;
-  z-index: -2;
-  /* display: none; */
 }
 
 .moveAside {

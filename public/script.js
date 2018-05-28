@@ -44,14 +44,17 @@ $(window).click((e) => {
 });
 
 $(window).click((e) => {
-    console.log($(e.target).parent().find('.projectIcons'));
-
-    if ($(e.target).hasClass('projectImg')) {
+    if ($(e.target).hasClass('projectImg') && !$(e.target).hasClass('moveAside')) {
         $('.moveAside').removeClass('moveAside');
         $(e.target).addClass('moveAside');
-        setTimeout(() => {
-            $('.moveForward').removeClass('moveForward');
-            $(e.target).parent().find('.projectIcons').addClass('moveForward');
-        }, 1000)
+        // setTimeout(() => {
+        //     $('.moveForward').removeClass('moveForward');
+        //     $(e.target).parent().find('.projectIcons').addClass('moveForward');
+        // }, 500);
+    } else if ($(e.target).hasClass('projectImg') && $(e.target).hasClass('moveAside')) {
+        $(e.target).removeClass('moveAside');
+        // $(e.target).parent().find('.projectIcons').removeClass('moveForward');
+    } else {
+        $('.moveAside').removeClass('moveAside');
     }
 });
