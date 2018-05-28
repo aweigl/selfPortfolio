@@ -178,17 +178,24 @@ header {
   display: flex;
   justify-content: center;
   margin: 20px 20px;
-  left: 120px;
   top: 120px;
+  left: 100px;
   z-index: -1;
 }
 .projectIcons i {
   font-size: 80px;
   color: black;
-  margin-right: 100px;
 }
 
 .projectIcons i:hover {
+  color: white;
+}
+
+.projectIcons a {
+  padding-right: 30px;
+  color: black;
+}
+.projectIcons a:hover {
   color: white;
 }
 

@@ -50,7 +50,6 @@ $(window).click((e) => {
         $('.seeThrough').removeClass('seeThrough');
         $('.moveForward').removeClass('moveForward');
         $(e.target).addClass('seeThrough');
-        // $(e.target).child().addClass('moveForward');
         $(e.target).parent().find('.projectIcons').addClass('moveForward');
     }
 });
