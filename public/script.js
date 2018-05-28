@@ -53,6 +53,28 @@ $(window).click((e) => {
     }
 });
 
+$('video').mouseenter((e) => {
+    console.log("adding github icon");
+    if (!$(e.target).hasClass('video_github')) {
+        $('.video_github').addClass('displayBlock');
+    } else if ($(document).webkitIsFullScreen) {
+        e.target.preventDefault();
+        return;
+    }
+});
+
+
+// TODO: CHANGE THIS SHIT
+$(window).mouseenter((e) => {
+    if ($(e.target).hasClass('videoContainer')) {
+        console.log("removing github icon");
+        $('.video_github').removeClass('displayBlock');
+    }
+});
+
+
+
+
 // $('.playIcon').click(() => {
 //     if ($('video').get(0).paused) {
 //         $('.playIcon').addClass('displayNone');

@@ -220,10 +220,35 @@ header {
   border-top: 1px solid rgba(56, 55, 55, 0.8);
 }
 
+.projects video:-webkit-full-screen-ancestor {
+  animation: none;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+
 .projects video:hover {
   -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
   box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
+}
+
+.video_github {
+  position: absolute;
+  margin: 20px 20px;
+  left: 33%;
+  top: 30%;
+  font-size: 30px;
+  color: black;
+  z-index: 1;
+  display: none;
+}
+
+.video_github i {
+  font-size: 50px;
+}
+
+.video_github:hover {
+  color: #494949;
 }
 
 .playIcon {
