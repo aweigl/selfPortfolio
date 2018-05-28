@@ -25,11 +25,8 @@ header {
   top: 0;
   z-index: 2;
   width: 100%;
-  /* grid-template-columns: 30% 70%; */
   align-items: center;
   font-size: 20px;
-  /* border-bottom: solid 1px gainsboro; */
-  /* background: rgba(255, 255, 255, 0.95); */
   background: rgba(0, 0, 0, 0.75);
   color: white;
 }
@@ -272,8 +269,10 @@ footer {
   padding: 1vw 1vw;
   height: 20px;
   margin-top: 150px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.75);
+  /* background: rgba(255, 255, 255, 0.95); */
   border-top: 1px solid rgba(56, 55, 55, 0.8);
+  color: white;
 }
 
 /* JQuery addClass */
