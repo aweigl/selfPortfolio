@@ -47,9 +47,11 @@ $(window).click((e) => {
     console.log($(e.target).parent().find('.projectIcons'));
 
     if ($(e.target).hasClass('projectImg')) {
-        $('.seeThrough').removeClass('seeThrough');
-        $('.moveForward').removeClass('moveForward');
-        $(e.target).addClass('seeThrough');
-        $(e.target).parent().find('.projectIcons').addClass('moveForward');
+        $('.moveAside').removeClass('moveAside');
+        $(e.target).addClass('moveAside');
+        setTimeout(() => {
+            $('.moveForward').removeClass('moveForward');
+            $(e.target).parent().find('.projectIcons').addClass('moveForward');
+        }, 1000)
     }
 });
