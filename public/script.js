@@ -66,11 +66,45 @@ $(window).click((e) => {
 });
 
 
-// $('video').mouseenter((e) => {
-//     console.log("adding github icon");
-//     if (!$(e.target).hasClass('video_github')) {
-//         $('.video_github').addClass('displayBlock');
-//     } else {
-//         e.target.preventDefault();
-//     }
-// });
+$('#playButton').click(() => {
+    const video = $('.videoContainer');
+
+    video.css({
+        display: "flex",
+        height: $(document).innerHeight() + "px",
+        top: 0
+    });
+
+    $('video').css({
+        top: $(this).offset().top + $(window).scrollTop() + 100
+    });
+
+    console.log("body", $('body'));
+
+    $('body').css({
+        overflow: 'hidden'
+    });
+});
+
+$('.videoContainer').click(() => {
+    $('.videoContainer').css("display", "none");
+    $('body').css({
+        overflow: ''
+    });
+});
+
+$(window).keydown((e) => {
+    if (e.keyCode === 27) {
+        $('.videoContainer').css("display", "none");
+        $('body').css({
+            overflow: ''
+        });
+    } else if (e.keyCode === 32) {
+        e.preventDefault();
+        if ($('video')[0].paused) {
+            $('video')[0].play();
+        } else {
+            $('video')[0].pause();
+        }
+    }
+});

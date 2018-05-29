@@ -213,80 +213,27 @@ header {
 }
 
 .videoContainer {
-  display: grid;
+  display: none;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
   justify-content: center;
-  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
 }
 
-.projects video {
+.videoContainer video {
+  width: 80%;
+  position: absolute;
+  border-radius: 5px;
+}
+
+/* .projects video {
   width: 625px;
   margin: 20px 20px;
   border-radius: 5px;
   border-top: 1px solid rgba(56, 55, 55, 0.8);
-}
-
-.projects video:-webkit-full-screen-ancestor {
-  animation: none;
-  -webkit-animation-fill-mode: none;
-  animation-fill-mode: none;
-}
-
-.projects video:hover {
-  -webkit-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
-  -moz-box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
-  box-shadow: -5px 5px 70px -9px rgba(87, 87, 87, 1);
-}
-
-.video_github {
-  position: absolute;
-  margin: 20px 20px;
-  left: 33%;
-  top: 30%;
-  font-size: 30px;
-  color: black;
-  z-index: 1;
-  display: none;
-}
-
-.video_github i {
-  font-size: 50px;
-}
-
-.video_github:hover {
-  color: #494949;
-}
-
-.playIcon {
-  position: absolute;
-  margin: 20px 20px;
-  left: 40%;
-  top: 26%;
-  font-size: 85px;
-  color: #484747;
-  z-index: 1;
-  display: none;
-}
-
-.playIcon:hover {
-  cursor: pointer;
-  color: white;
-}
-
-.pauseIcon {
-  position: absolute;
-  margin: 20px 20px;
-  left: 40%;
-  top: 26%;
-  font-size: 85px;
-  color: #484747;
-  z-index: 1;
-  display: none;
-}
-
-.pauseIcon:hover {
-  cursor: pointer;
-  color: white;
-}
+} */
 
 .contact {
   display: grid;
