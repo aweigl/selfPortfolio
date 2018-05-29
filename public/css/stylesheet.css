@@ -212,6 +212,10 @@ header {
   cursor: pointer;
 }
 
+#playButton:hover {
+  cursor: pointer;
+}
+
 .videoContainer {
   display: none;
   width: 100%;
@@ -220,6 +224,7 @@ header {
   justify-content: center;
   background: rgba(0, 0, 0, 0.75);
   overflow: hidden;
+  animation: slowShow 0.7s;
 }
 
 .videoContainer video {
@@ -306,4 +311,13 @@ footer {
 
 .moveForward {
   z-index: 1;
+}
+
+@keyframes slowShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -84,11 +84,13 @@ $('#playButton').click(() => {
     });
 });
 
-$('.videoContainer').click(() => {
-    $('.videoContainer').css("display", "none");
-    $('body').css({
-        overflow: ''
-    });
+$('.videoContainer').click((e) => {
+    if ($(e.target).hasClass('videoContainer')) {
+        $('.videoContainer').css("display", "none");
+        $('body').css({
+            overflow: ''
+        });
+    }
 });
 
 $(window).keydown((e) => {
