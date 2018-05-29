@@ -71,14 +71,6 @@ $('#textLink').click(() => {
     scrollToAnchor('skills', 50)
 });
 
-//clickEvents
-
-// $(window).click((e) => {
-//     if (!$(e.target).hasClass('seeThrough')) {
-//         $('.seeThrough').removeClass('seeThrough');
-//         $('.moveForward').removeClass('moveForward');
-//     }
-// });
 
 $(window).click((e) => {
     if ($(e.target).hasClass('projectImg') && !$(e.target).hasClass('moveAside')) {
