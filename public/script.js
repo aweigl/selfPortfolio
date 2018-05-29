@@ -26,10 +26,35 @@ $('#aboutMe').click(() => {
 
 });
 
+const primary_move = () => {
+    setTimeout(() => {
+        $('#primaryProject').addClass('moveAside_primary');
+        setTimeout(() => {
+            $('#primaryProject').removeClass('moveAside_primary');
+        }, 1400);
+    }, 700);
+};
+
+let passed_once = false;
+
 $('#projects').click(() => {
     scrollToAnchor('link1', -70);
     console.log($('.projects').position());
+    if (!passed_once) {
+        primary_move();
+        passed_once = true;
+    }
 });
+$(window).scroll(() => {
+    if ($(window).scrollTop() >= 670 && $(window).scrollTop() <= 900) {
+        if (!passed_once) {
+            primary_move();
+            passed_once = true;
+        }
+    }
+});
+
+
 
 $('#skills').click(() => {
     scrollToAnchor('skills', 0)
@@ -47,12 +72,12 @@ $('#textLink').click(() => {
 
 //clickEvents
 
-$(window).click((e) => {
-    if (!$(e.target).hasClass('seeThrough')) {
-        $('.seeThrough').removeClass('seeThrough');
-        $('.moveForward').removeClass('moveForward');
-    }
-});
+// $(window).click((e) => {
+//     if (!$(e.target).hasClass('seeThrough')) {
+//         $('.seeThrough').removeClass('seeThrough');
+//         $('.moveForward').removeClass('moveForward');
+//     }
+// });
 
 $(window).click((e) => {
     if ($(e.target).hasClass('projectImg') && !$(e.target).hasClass('moveAside')) {

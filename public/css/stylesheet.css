@@ -153,7 +153,6 @@ header {
 .projects {
   display: grid;
   justify-content: center;
-  /* background: rgba(255, 255, 255, 0.85); */
   margin-left: 20vw;
   margin-right: 20vw;
   margin-top: 150px;
@@ -164,6 +163,10 @@ header {
   text-align: center;
   text-decoration: underline;
   color: white;
+}
+
+#primaryProject {
+  transition: ease-in 1s;
 }
 
 .projectIconContainerOne {
@@ -301,6 +304,11 @@ footer {
 .moveAside {
   transform: translateX(-100%);
   transition: ease-in 0.5s;
+}
+
+.moveAside_primary {
+  transform: translateX(-100%);
+  transition: ease-in 1s;
 }
 
 .moveForward {
