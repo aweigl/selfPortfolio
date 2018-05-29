@@ -47,7 +47,7 @@ $('#projects').click(() => {
 });
 
 $(window).scroll(() => {
-    if ($(window).scrollTop() >= 670 && $(window).scrollTop() <= 900) {
+    if ($(window).scrollTop() >= 650 && $(window).scrollTop() <= 900) {
         if (!passed_once) {
             primary_move();
             passed_once = true;
