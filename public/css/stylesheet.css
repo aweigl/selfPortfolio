@@ -303,7 +303,7 @@ footer {
 
 .moveAside {
   transform: translateX(-100%);
-  transition: ease-in 0.5s;
+  transition: ease-in 0.7s;
 }
 
 .moveAside_primary {

@@ -45,6 +45,7 @@ $('#projects').click(() => {
         passed_once = true;
     }
 });
+
 $(window).scroll(() => {
     if ($(window).scrollTop() >= 670 && $(window).scrollTop() <= 900) {
         if (!passed_once) {
