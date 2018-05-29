@@ -79,8 +79,6 @@ $('#playButton').click(() => {
         top: $(this).offset().top + $(window).scrollTop() + 100
     });
 
-    console.log("body", $('body'));
-
     $('body').css({
         overflow: 'hidden'
     });
