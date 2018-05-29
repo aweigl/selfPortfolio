@@ -5,7 +5,19 @@ const scrollToAnchor = (aid, offset) => {
     }, "slow");
 };
 
+//mail parcing 
 
+
+
+const mail = $("#mail")
+mail.on("click", () => {
+    console.log("CLICK");
+    const part1 = "aaron.weigl";
+    const extra = Math.pow(2, 6);
+    const part2 = String.fromCharCode(extra);
+    const part3 = "hotmail.com";
+    mail.attr("href", `mailto:${part1}${part2}${part3}`);
+});
 // hover
 
 $('#aboutMe').click(() => {
@@ -53,54 +65,12 @@ $(window).click((e) => {
     }
 });
 
-$('video').mouseenter((e) => {
-    console.log("adding github icon");
-    if (!$(e.target).hasClass('video_github')) {
-        $('.video_github').addClass('displayBlock');
-    } else {
-        e.target.preventDefault();
-    }
-});
 
-
-// TODO: CHANGE THIS SHIT
-$(window).mouseenter((e) => {
-    if ($(e.target).hasClass('videoContainer')) {
-        console.log("removing github icon");
-        $('.video_github').removeClass('displayBlock');
-    }
-});
-
-
-
-
-// $('.playIcon').click(() => {
-//     if ($('video').get(0).paused) {
-//         $('.playIcon').addClass('displayNone');
-//         $('video').get(0).play();
-//         setTimeout(() => {
-//             $('.pauseIcon').removeClass('displayBlock');
-//         }, 1000);
+// $('video').mouseenter((e) => {
+//     console.log("adding github icon");
+//     if (!$(e.target).hasClass('video_github')) {
+//         $('.video_github').addClass('displayBlock');
 //     } else {
-//         $('video').get(0).pause();
-//         $('.playIcon').removeClass('displayNone');
-//     }
-// });
-
-// $('.pauseIcon').click(() => {
-//     $('video').get(0).pause();
-// });
-
-// $('video').hover(() => {
-//     if (!$('video').get(0).paused) {
-//         $('.pauseIcon').addClass('displayBlock');
-//         setTimeout(() => {
-//             $('.pauseIcon').removeClass('displayBlock');
-//         }, 3000);
-//     } else {
-//         setTimeout(() => {
-//             $('.pauseIcon').addClass('displayBlock');
-//         }, 3000);
-//         $('.playIcon').removeClass('displayNone');
+//         e.target.preventDefault();
 //     }
 // });
