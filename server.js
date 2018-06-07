@@ -8,4 +8,9 @@ app.get("/", (req, res) => {
     res.sendFile(`${__dirname}/public/main.html`);
 });
 
+
+app.get('google-analytics/sitemap', (req, res) => {
+    res.sendFile(`${__dirname}/sitemap.xml`);
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
